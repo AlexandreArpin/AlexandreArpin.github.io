@@ -1,6 +1,6 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
+\usepackage[none]{hyphenat}
 
 \begin{document}
 \header{Alexandre }{Arpin}
@@ -24,7 +24,7 @@
     {since 2011}
     {B.Ing {\normalfont Software Engineering}}
     {École de Technologie Supérieure}
-    {\emph{Specialization in Information Systems}}
+    {}
   \entry
     {2008–2011}
     {DCS. {\normalfont Computer Science Technology}}
@@ -36,21 +36,29 @@
 
 \begin{entrylist}
   \entry
+    {2015}
+    {\href{http://www.resulto.ca/en/}{Resulto}, Montreal}
+    {Software Developer}
+    {\emph{Conception, development and maintenance of a point of engagement platform for iOS and Android devices.}
+    \begin{itemize}
+      \item Backend development with Python (django, django-rest-framework)
+      \item Frontend development (grunt, gulp, requirejs, etc...)
+      \item Tests, code review and continuous integration
+    \end{itemize}}
+  \entry
     {2013-2014}
     {\href{http://beehivr.com/en}{Beehivr Technologies}, Repentigny}
-    {Software Developer.}
-    {\emph{Conception, developement and maintenance of a point of engagement platform for iOS and Android devices.}
+    {Software Developer}
+    {\emph{Conception, development and maintenance of a point of engagement platform for iOS and Android devices.}
     \begin{itemize}
-      \item .NET Application development (ASP.NET MVC and ASP.NET WebApi)
+      \item ASP.NET Application development (MVC and WebApi)
       \item Mobile Application development (Android and iOS)
       \item JavaFX Application development
-      \item Implemented quality control processes (Reviews and tests)
-      \item Implemented automation processes (Tests and deployments)
     \end{itemize}}
   \entry
     {2012}
     {\href{https://www.arcelormittal.com/minescanada/en/}{ArcelorMittal Mines Canada}, Port-Cartier}
-    {Junior Developer.}
+    {Junior Developer}
     {\emph{Development, maintenance and refactoring of a train scheduling and prediction system.}
     \begin{itemize}
       \item .NET Application development (WinForms and ASP.NET WebForms)
@@ -59,20 +67,22 @@
   \entry
     {2010-2011}
     {\href{http://skytech.com}{Skytech Communications}, Montreal}
-    {Junior Developer.}
+    {Junior Developer}
     {\emph{Development and maintenance of a student information system for the post-secondary educational sector.}
     \begin{itemize}
       \item .NET Application development (WinForms and ASP.NET MVC)
       \item Development and optimisation of SQL queries (SQL Server)
-      \item Database administration (1000+ tables, 100M+ rows)
-      \item Agile Methodology with emphasis on Pair Programming
     \end{itemize}}
 \end{entrylist}
-
 
 \section{projects}
 
 \begin{entrylist}
+  \entry
+    {2015}
+    {Magic: the Gathering Font}
+    {\href{http://alexandrearpin.com/mtg-font}{alexandrearpin.com/mtg-font}}
+    {An easy to use Web font inspired by FontAwesome for all of the Magic: the Gathering symbols (Mana, Actions, etc...).}
   \entry
     {2014}
     {Unfinished Asteroids libGDX}
@@ -89,6 +99,5 @@
 
 \section{interests}
 
-Urban exploration, Board games, User experience, Application design, Cooking and Craft beer. 
-
+Board games, User experience, Application design, Magic the Gathering and Cooking.
 \end{document}
