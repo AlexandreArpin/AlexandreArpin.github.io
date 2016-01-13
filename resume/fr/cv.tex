@@ -1,28 +1,21 @@
-%!TEX TS-program = xelatex
+%!TEX TS-program = lualatex
 \documentclass[]{friggeri-cv}
 \usepackage[none]{hyphenat}
+\usepackage{fontspec}
+\usepackage{fontawesome}
 
 \begin{document}
 \header{Alexandre }{Arpin}
        {Développeur Logiciel}
-
-% In the aside, each new line forces a line break
-\begin{aside}
-  \section{contact}
-    alexandrearpin.com
-    arpin.alexandre@gmail.com
-    514-730-6126
-  \section{langues}
-    Français
-    Anglais
-\end{aside}
+       {\faCloud ~alexandrearpin.com~ | \faHome ~Montréal, Qc~ | ~ \faPhone ~(514) 730-6126~ | ~\faEnvelopeAlt  ~arpin.alexandre@gmail.com}
 
 \section{éducation}
+
 \begin{entrylist}
   \entry
     {2011-2016}
     {B.Ing {\normalfont Génie logiciel}}
-    {École de Technologie Supérieure}
+    {École de technologie supérieure}
     {}
     {0cm}
   \entry
@@ -38,66 +31,71 @@
 \begin{entrylist}
   \entry
     {2015}
-    {\href{http://www.resulto.ca/}{Resulto}, Montreal}
-    {Développeur Logiciel}
+    {Resulto, Montréal}
+    {python, django, django-rest-framework, html5, sass, gulp}
     {\emph{Conception, développement et maintenance de LoyalAction, une solution pour la fidélisation de clientèle.}
     \vspace{0.1cm}
     \begin{itemize}
-      \item Développement Backend avec Python (django, django-rest-framework)
-      \item Développement Frontend (grunt, gulp, requirejs, etc...)
-      \item Tests, revues de codes et intégration continue
+      \item Développer des fonctionnalités de qualité dans un contexte "Full Stack"
+      \item Intégrer des applications et services de tierces parties
+      \item Maintenir des standards de hautes qualités à l'aide de tests unitaires et de documentation
+      \item Rechercher et implémenter un algorithme de génération de nombre non-séquentiel unique
+      \item Publier des outils de développement open-source à l'aide de package PyPi
     \end{itemize}}
     {0.3cm}
   \entry
     {2013-2014}
-    {\href{http://beehivr.com/fr}{Beehivr Technologies}, Repentigny}
-    {Développeur Logiciel}
+    {Beehivr Technologies, Repentigny}
+    {C\#, ASP.NET MVC, WebApi, html5, css3, Android, Obj-C, JavaFX}
     {\emph{Conception, développement et maintenance de Beehivr, une plateforme de point d'engagement pour iOS et Android.}
     \vspace{0.1cm}
     \begin{itemize}
-      \item Développement d'applications .NET (MVC et WebApi)
-      \item Développement d'applications Mobiles (iOS et Android)
-      \item Développement d'applications JavaFX
+      \item Développer un tableau de bord d'administration pour gérer des centaines d'appareils iOS
+      \item Développer un Api REST pour les applications Beehivr et les fournisseurs
+      \item Intégrer Amazon Web Services aux applications et à l'environnement de développement
+      \item Collaborer à la conception et à la revue de l'application iOS Beehivr
+      \item Porter et adapter l'application iOS Beehivr vers Android
     \end{itemize}}
     {0.3cm}
   \entry
     {2010-2011}
-    {\href{http://skytech.com}{Skytech Communications}, Montreal}
-    {Développeur Logiciel Junior}
-    {\emph{Développement et maintenance de Clara, un plateforme de gestion de l'enseignement et des finances pour le secteur de l'éducation postsecondaire.}\vspace{0.1cm}
+    {Skytech Communications, Montréal}
+    {C\#, ASP.NET MVC, WinForms, T-SQL, SQL Server}
+    {\emph{Développement et maintenance de Clara, une plateforme de gestion de l'enseignement et des finances pour le secteur de l'éducation postsecondaire.}
+    \vspace{0.1cm}
     \begin{itemize}
-      \item Développement d'applications .NET (WinForms et MVC)
-      \item Développement et optimisations de requêtes SQL (SQL Server)
+      \item Développer des fonctionnalités pour le système financier Clara
+      \item Porter plusieurs modules de Clara vers ASP.NET MVC
+      \item Mesurer et optimiser les requêtes SQL lentes sur d'importantes bases de données
+      \item Contribuer aux outils internes afin d'améliorer et d'accélérer le développement
     \end{itemize}}
     {0cm}
 \end{entrylist}
 
-
 \section{projets}
 
 \begin{entrylist}
+ \entry
+    {2015}
+    {Magic: the Gathering Card Identifier {\normalfont alexandrearpin.com/mtg-card-identifier}}
+    {python, django}
+    {Librairie et application web permettant d'identifier des cartes Magic: the Gathering prisent en photo à l'aide de vision numérique (OpenCV et Tesseract).}
+    {0.1cm}
   \entry
     {2015}
-    {Magic: the Gathering Font}
-    {\href{http://alexandrearpin.com/mtg-font}{alexandrearpin.com/mtg-font}}
-    {Inspiré par {\href{http://fortawesome.github.io/Font-Awesome/}{FontAwesome}}, Web font facile à utiliser pour tous les symboles de Magic: The Gathering (Mana, Actions, etc...).}
+    {Magic: the Gathering Font {\normalfont alexandrearpin.com/mtg-font}}
+    {html5, css3}
+    {Inspiré par FontAwesome, Web font facile à utiliser pour tous les symboles du jeu Magic: The Gathering.}
     {0.1cm}
   \entry
     {2014}
-    {Unfinished Asteroids libGDX}
-    {\href{http://alexandrearpin.com/unfinished-asteroids-libgdx}{alexandrearpin.com/unfinished-asteroids-libgdx}}
-    {Port en LibGDX d'\href{https://github.com/rezoner/unfinished-asteroids}{Unfinished Asteroids par Rezoner}.
-    \\*À des fins d'apprentissage, un jeu semi complété vous est confié en plus d'un scénario qui vous guidera afin de résoudre des bogues et à ajouter des nouvelles fonctionnalités.}
-    {0.1cm}
-  \entry
-    {2014}
-    {Signets Android}
-    {\href{http://alexandrearpin.com/signets-android}{alexandrearpin.com/signets-android}}
-    {Une version réimaginée de l'application de gestion des résultats d'évaluations utilisées par l'École de Technologie Supérieure pour les appareils Android.}
+    {Unfinished Asteroids libGDX {\normalfont alexandrearpin.com/unfinished-asteroids-libgdx}}
+    {Android}
+    {À des fins d’apprentissage, on vous met dans la peau d'un nouveau développeur se joignant à un projet incomplet du jeu Asteroid. Par la suite, une mise en scène vous guidera afin de résoudre des bogues et ajouter de nouvelles fonctionnalités à ce jeu d’arcade classique.}
     {0cm}
-  
 \end{entrylist}
 
 \section{intérêts}
-Jeux de tables, Expérience utilisateur, Conception d'applications, Magic the Gathering et Cuisine
+
+Expérience utilisateur, conception d'applications, jeux de tables, Magic: the Gathering et cuisine
 \end{document}

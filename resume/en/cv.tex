@@ -1,29 +1,21 @@
-%!TEX TS-program = xelatex
+%!TEX TS-program = lualatex
 \documentclass[]{friggeri-cv}
 \usepackage[none]{hyphenat}
+\usepackage{fontspec}
+\usepackage{fontawesome}
 
 \begin{document}
 \header{Alexandre }{Arpin}
        {Software Developer}
-
-% In the aside, each new line forces a line break
-\begin{aside}
-  \section{contact}
-    alexandrearpin.com
-    arpin.alexandre@gmail.com
-    514-730-6126
-  \section{languages}
-    French
-    English
-\end{aside}
+       {\faCloud ~alexandrearpin.com~ | \faHome ~Montreal, Qc~ | ~ \faPhone ~(514) 730-6126~ | ~\faEnvelopeAlt  ~arpin.alexandre@gmail.com}
 
 \section{education}
 
 \begin{entrylist}
   \entry
     {2011-2016}
-    {B.Ing {\normalfont Software Engineering}}
-    {École de Technologie Supérieure}
+    {B.Eng {\normalfont Software Engineering}}
+    {École de technologie supérieure}
     {}
     {0cm}
   \entry
@@ -39,37 +31,44 @@
 \begin{entrylist}
   \entry
     {2015}
-    {\href{http://www.resulto.ca/en/}{Resulto}, Montreal}
-    {Software Developer}
-    {\emph{Conception, development and maintenance of LoyalAction, a solution for customer loyalty.}
+    {Resulto, Montreal}
+    {python, django, django-rest-framework, html5, sass, gulp}
+    {\emph{Design, development and maintenance of LoyalAction, a solution for customer loyalty.}
     \vspace{0.1cm}
     \begin{itemize}
-      \item Backend development with Python (django, django-rest-framework)
-      \item Frontend development (grunt, gulp, requirejs, etc...)
-      \item Tests, code review and continuous integration
+      \item Delivered quality features spanning the full development stack
+      \item Integrated third-party applications and services seamlessly
+      \item Maintained high quality standards through unit tests and documentation
+      \item Researched and implemented a unique non-sequential number generation algorithm
+      \item Published useful tools as PyPi packages for the open-source community
     \end{itemize}}
     {0.3cm}
   \entry
     {2013-2014}
-    {\href{http://beehivr.com/en}{Beehivr Technologies}, Repentigny}
-    {Software Developer}
-    {\emph{Conception, development and maintenance of Beehivr, a point of engagement platform for iOS and Android.}
+    {Beehivr Technologies, Repentigny}
+    {C\#, ASP.NET MVC, WebApi, html5, css3, Android, Obj-C, JavaFX}
+    {\emph{Design, development and maintenance of Beehivr, a point of engagement platform for iOS and Android.}
     \vspace{0.1cm}
     \begin{itemize}
-      \item ASP.NET Application development (MVC and WebApi)
-      \item Mobile Application development (Android and iOS)
-      \item JavaFX Application development
+      \item Delivered a fully featured administration dashboard to manage hundreds of iOS devices
+      \item Developed a RESTful Web Api for the Beehivr applications and providers
+      \item Integrated Amazon Web Services to the applications and environment
+      \item Collaborated on the design and reviews of the Beehivr iOS application
+      \item Ported and adapted the Beehivr iOS application to Android
+      \item Developed a standalone JavaFX application to manage event guest lists
     \end{itemize}}
     {0.3cm}
   \entry
     {2010-2011}
-    {\href{http://skytech.com}{Skytech Communications}, Montreal}
-    {Junior Software Developer}
-    {\emph{Development and maintenance of a student information system for the post-secondary educational sector.}
+    {Skytech Communications, Montreal}
+    {C\#, ASP.NET MVC, WinForms, T-SQL, SQL Server}
+    {\emph{Development and maintenance of Clara, a student information and financial system for the post-secondary educational sector.}
     \vspace{0.1cm}
     \begin{itemize}
-      \item .NET Application development (WinForms and ASP.NET MVC)
-      \item Development and optimisation of SQL queries (SQL Server)
+      \item Developed features for the Clara financial system
+      \item Ported many of Clara's modules to ASP.NET MVC
+      \item Benchmarked and optimized slow SQL queries on large databases
+      \item Contributed internal tools that improved and speed up development
     \end{itemize}}
     {0cm}
 \end{entrylist}
@@ -77,28 +76,27 @@
 \section{projects}
 
 \begin{entrylist}
+ \entry
+    {2015}
+    {Magic: the Gathering Card Identifier {\normalfont alexandrearpin.com/mtg-card-identifier}}
+    {python, django}
+    {A library and web application that identify Magic: the Gathering cards in pictures through image recognition (OpenCV and Tesseract).}
+    {0.1cm}
   \entry
     {2015}
-    {Magic: the Gathering Font}
-    {\href{http://alexandrearpin.com/mtg-font}{alexandrearpin.com/mtg-font}}
-    {An easy to use Web font inspired by FontAwesome for all of the Magic: the Gathering symbols (Mana, Actions, etc...).}
+    {Magic: the Gathering Font {\normalfont alexandrearpin.com/mtg-font}}
+    {html5, css3}
+    {An easy to use web font inspired by FontAwesome for all of the Magic: the Gathering symbols.}
     {0.1cm}
   \entry
     {2014}
-    {Unfinished Asteroids libGDX}
-    {\href{http://alexandrearpin.com/unfinished-asteroids-libgdx}{alexandrearpin.com/unfinished-asteroids-libgdx}}
-    {LibGDX port of \href{https://github.com/rezoner/unfinished-asteroids}{Rezoner's Unfinished Asteroids}.
-    \\*For learning purposes, an unfinished game is being handed to you along with a storyline that will guide you through fixing known bugs and implementing new features.}
-    {0.1cm}
-  \entry
-    {2014}
-    {Signets Android}
-    {\href{http://alexandrearpin.com/signets-android}{alexandrearpin.com/signets-android}}
-    {École de Technologie Supérieure's grading application redesigned and re-imagined for Android devices.}
+    {Unfinished Asteroids libGDX {\normalfont alexandrearpin.com/unfinished-asteroids-libgdx}}
+    {Android}
+    {For learning purposes, you are asked to act as new developer joining an unfinished Asteroid game project. A storyline then guides you through fixing known bugs and implementing new features in this classic arcade game.}
     {0cm}
 \end{entrylist}
 
 \section{interests}
 
-Board games, User experience, Application design, Magic the Gathering and Cooking
+User experience, application design, Magic: the Gathering, board games, roller blading and cooking
 \end{document}
