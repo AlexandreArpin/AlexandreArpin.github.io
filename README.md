@@ -1,4 +1,4 @@
 AlexandreArpin.github.io
 ========================
 
-My personal website
+Splash page with my contact information
